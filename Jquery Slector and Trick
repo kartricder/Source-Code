@@ -1,0 +1,14 @@
+
+--------------------------- Jquery selector class ----------------------------------------------
+$(".sv-child-1").addClass("sv-activee");
+$(".sv-dropbox").on("click",function(){
+		$(".sv-dropbox").removeClass("sv-activee");
+		$(this).addClass("sv-activee");
+});
+$('#dr-1').addClass('active');
+$('.sv-main').click(function(){
+	$(this).next().slideToggle();
+	$(this).parent().siblings().find('.content-tab').hide();
+	$(this).parent().toggleClass('active');
+	$(this).parent().siblings().removeClass('active');
+})
