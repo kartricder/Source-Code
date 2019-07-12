@@ -1,0 +1,11 @@
+--------------------------if(isset() in PHP ---------------------------------------------------
+if (isset($something)) {
+	echo $something;
+}else {
+	echo 'variable not set';
+}
+-->This can be expressed using the null coalescing operator (??) like so:<--
+	echo $something ?? 'variable not set';
+-------------------------echo in php ------------------------------------------------------------
+
+Instead using <?php echo $variable ?> -> Using <?= $variable ?>
