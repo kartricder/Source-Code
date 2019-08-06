@@ -12,3 +12,16 @@ $('.sv-main').click(function(){
 	$(this).parent().toggleClass('active');
 	$(this).parent().siblings().removeClass('active');
 })
+-----------------------Magento 1.9 Jquery change input -----------------------------------------------
+ <script>
+     define(['jquery'],function($){
+        $("#qty").change(function(){
+            var qty = $(this).val();
+           // console.log(qty);
+            if(qty <= 0){
+                $(this).val(1); 
+            }
+        })
+     })
+ </script>
+ ------------------------------------------------------------------------------------------------
